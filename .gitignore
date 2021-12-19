@@ -1,7 +1,3 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows
-
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -28,4 +24,11 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows
+# Ignore
+app.js
+app.dist.js
+*.html
+*.kit
+*.config
+src/*
+app/*
