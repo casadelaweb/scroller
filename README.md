@@ -36,13 +36,13 @@ myLinks.init();
 
 ```js 
 const myLinks = new Scroller({
-        // These are default settings
-        btnSelector: ".scroll-to",
-        btnAttr: "data-scroll",
-        btnPreventDefault: true,
-        offsetTop: 0,
-        navAutoOffset: false,
-        navSelector: "nav",
-    });
+    // These are default settings
+    btnSelector: ".scroll-to",
+    btnAttr: "data-scroll",
+    btnPreventDefault: true,
+    offsetTop: 0,
+    navAutoOffset: false,
+    navSelector: "nav",
+});
 myLinks.init();   
 ```

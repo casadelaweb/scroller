@@ -25,10 +25,10 @@ $RECYCLE.BIN/
 *.lnk
 
 # Ignore
-app.js
-app.dist.js
 *.html
 *.kit
+prepros.config
 *.config
 src/*
 app/*
+dist/scroller.js
