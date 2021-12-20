@@ -12,18 +12,18 @@ Lightweight, smooth scrolling JavaScript plugin with no external dependences.
 ```
 
 #### Via script tag
-Download the latest scroller.min.js and then place it in your project's folder.
+Download the latest scroller-cdn.min.js and then place it in your project's folder.
 
 ```html
 <!-- Include via script tag in your html code -->
-<script src="your-path-to/scroller.min.js"></script>
+<script src="your-path-to/scroller-cdn.min.js"></script>
 ```
 #### Import
-Import scroller.js as an ES module like the following:
+Import scroller-es6.min.js as an ES module like the following:
 
 ```js 
 // Import it with webpack
-import Scroller from "./your-path-to-scroller.min.js";
+import Scroller from "./your-path-to/scroller.min.js";
 ```
 
 ## Usage & Initialization
