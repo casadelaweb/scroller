@@ -7,7 +7,7 @@ Lightweight, smooth scrolling JavaScript plugin with no external dependences.
 #### CDN
 ```html
 <!-- The fastest way to get started -->
-<script src="https://cdn.jsdelivr.net/gh/casadelaweb/scroller/dist/scroller.min.js>">
+<script src="https://cdn.jsdelivr.net/gh/casadelaweb/scroller/dist/scroller-cdn.min.js">
 </script>
 ```
 

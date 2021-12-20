@@ -28,7 +28,6 @@ $RECYCLE.BIN/
 *.html
 *.kit
 prepros.config
-*.config
 src/*
 app/*
 dist/scroller.js
