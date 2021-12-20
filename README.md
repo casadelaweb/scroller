@@ -1,39 +1,56 @@
 # Scroller.js
 
+Lightweight, smooth scrolling JavaScript plugin with no external dependences.
+
 ## Getting started
-#### 1. Download latest scroller.min.js and place it in your project's folder.
-#### 2. Include it via script tag in your html:
+
+#### CDN
+```html
+<!-- The fastest way to get started -->
+<script src="https://cdn.jsdelivr.net/gh/casadelaweb/scroller/dist/scroller.min.js>"></script>
+```
+
+#### Via script tag
+Download the latest scroller.min.js and then place it in your project's folder.
 
 ```html
-<!-- Include via script tag in HMTL -->
-<script src="scroller.min.js"></script>
+<!-- Include via script tag in your html code -->
+<script src="your-path-to/scroller.min.js"></script>
 ```
-#### 2. Or import it as an ES module like the following:
+#### Import
+Import scroller.js as an ES module like the following:
 
 ```js 
 // Import it with webpack
 import Scroller from "./your-path-to-scroller.min.js";
 ```
 
-#### 3. Then initialize it in your javascript code:
+## Initialize 
+Then initialize it in your javascript code the way you prefer:
 
 ```js
-// Don't forget to init it in your js
-const myLinks = new Scroller({});
-myLinks.init();
+// Don't forget to initialize it in your js
+
+// using a variable:
+const myLinks = new Scroller({
+    // with or without your custom settings
+});
+
+// or simply just:
+new Scroller();
 ```
-#### 4. Add you custom settings or just leave it default
+
+## Settings
+
+#### Add your custom settings if needed
 
 ```js
 const myLinks = new Scroller({
     // Your custom settings go here
 });
-myLinks.init();  
 ```
 
-## Settings
-
-### Default settings
+#### Or don't - stay with default settings
 ```js 
 const myLinks = new Scroller({
     // These are default settings
@@ -44,5 +61,4 @@ const myLinks = new Scroller({
     navAutoOffset: false,
     navSelector: "nav",
 });
-myLinks.init();   
 ```
