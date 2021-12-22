@@ -7,6 +7,7 @@ Lightweight, smooth scrolling JavaScript plugin with no external dependences.
 #### CDN
 ```html
 <!-- The fastest way to get started -->
+<!-- Note that CDN version has been transpiled with Babel -->
 <script src="https://cdn.jsdelivr.net/gh/casadelaweb/scroller/dist/scroller-cdn.min.js">
 </script>
 ```
@@ -16,6 +17,7 @@ Download the latest scroller-cdn.min.js and then place it in your project's fold
 
 ```html
 <!-- Include via script tag in your html code -->
+<!-- Note that CDN version has been transpiled with Babel -->
 <script src="your-path-to/scroller-cdn.min.js"></script>
 ```
 #### Import
@@ -110,16 +112,16 @@ const myLinks = new Scroller({
     // Prevent default behavior of links and buttons?
     // Type Boolean
     btnPreventDefault: true,
-
-    // Static top offset (px)
-    // Type Number. Negative value is also appropriate. By default it's 0px.
-    // This will scroll you to 100px before target element
-    offsetTop: 100,
 });
 ```
 #### Fixed navigation offset settings:
 ```js 
 const myLinks = new Scroller({
+    // Static top offset (px)
+    // Type Number. Negative value is also appropriate. By default it's 0px.
+    // This will scroll you to 100px before target element
+    offsetTop: 100,
+
     // Calculate top offset based on navigation height?
     // Type Boolean. By default it's false.
     navAutoOffset: true,
@@ -147,11 +149,29 @@ const myLinks = new Scroller({
 });
 ```
 
+#### Links settings
+```html
+    <a href="services.html#title-section">
+        Go to page "services.html" and then scroll to element with id "title-section"
+    </a>
+```
+
+```js
+const myLinks = new Scroller({
+    // Selector of links that scroll to the specific id
+    // Works fine for any page - current or external
+    // If current page contains an element with stated id, it scrolls to that element
+    // If not, goes to the stated page and then scrolls to the element with stated id
+    // Type String
+    linkSelector: "a"
+});
+```
+
 #### button Up settings:
 Button to top has only one setting - it's selector:
 ```js 
 const myLinks = new Scroller({
-    // Selector of buttons that scrolls to the top of the page
+    // Selector of buttons that scroll to the top of the page
     // Type String
     btnUpSelector:".button-up",
 });
@@ -167,6 +187,9 @@ const myLinks = new Scroller({
     offsetTop: 0,
     navAutoOffset: false,
     navSelector: "nav",
-    btnUpSelector:".button-up"
+    btnUpSelector:".button-up",
+    linkSelector: "a",
+    log: false,
+    logLang: "en"
 });
 ```
